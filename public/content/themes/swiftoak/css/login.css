@@ -1,0 +1,277 @@
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(
+        to right,
+        #ee7724,
+        #d8363a,
+        #dd3675,
+        #b44593
+    );
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+@media (min-width: 768px) {
+    /* .gradient-form {
+    height: 100vh !important;
+    } */
+}
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+    }
+}
+
+.img {
+    height: 60px;
+    width: auto;
+}
+.pricing-table {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.referrals {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    max-width: 2100px !important;
+    margin: 0 auto;
+}
+
+.pricing-table .ptable-item {
+    width: 33.33%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+@media (max-width: 992px) {
+    .pricing-table .ptable-item {
+        width: 33.33%;
+    }
+}
+@media (max-width: 768px) {
+    .pricing-table .ptable-item {
+        width: 50%;
+    }
+}
+@media (max-width: 576px) {
+    .pricing-table .ptable-item {
+        width: 100%;
+    }
+}
+.pricing-table .ptable-single {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid #d9d1d1;
+}
+.pricing-table .ptable-header,
+.pricing-table .ptable-body,
+.pricing-table .ptable-footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.pricing-table .ptable-status,
+.pricing-table .ptable-title,
+.pricing-table .ptable-price,
+.pricing-table .ptable-description,
+.pricing-table .ptable-action {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.pricing-table .ptable-single:hover {
+    box-shadow: 0 0 10px #999999;
+}
+.pricing-table .ptable-header {
+    margin: 0 30px;
+    padding: 30px 0 45px 0;
+    width: auto;
+    /* background: linear-gradient(to right, #ee7724, #ec999b, #ea82aa, #b44593); */
+    background: linear-gradient(to right, #523223, #230a0a, #351722, #572247);
+}
+
+.modal-header{
+    background: linear-gradient(to right, #523223, #230a0a, #351722, #572247);
+}
+.pricing-table .ptable-header::before,
+.pricing-table .ptable-header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #fff;
+}
+.pricing-table .ptable-header::before {
+    right: 50%;
+    border-right: 250px solid transparent;
+}
+.pricing-table .ptable-header::after {
+    left: 50%;
+    border-left: 250px solid transparent;
+}
+.pricing-table .ptable-item.active-item .ptable-header {
+    background: #ff6f61;
+}
+.pricing-table .ptable-status {
+    margin-top: -30px;
+}
+.pricing-table .ptable-status span {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    padding: 5px 0;
+    text-align: center;
+    color: #ff6f61;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    background: #2a293e;
+}
+.pricing-table .ptable-status span::before,
+.pricing-table .ptable-status span::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #ff6f61;
+}
+.pricing-table .ptable-status span::before {
+    right: 50%;
+    border-right: 25px solid transparent;
+}
+.pricing-table .ptable-status span::after {
+    left: 50%;
+    border-left: 25px solid transparent;
+}
+.pricing-table .ptable-title h2 {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.pricing-table .ptable-price h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+.pricing-table .ptable-price h2 small {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 16px;
+    margin-left: -15px;
+}
+.pricing-table .ptable-price h2 span {
+    margin-left: 3px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.pricing-table .ptable-body {
+    padding: 20px 0;
+}
+.pricing-table .ptable-description ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.pricing-table .ptable-description ul li {
+    color: #2a293e;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 7px;
+    border-bottom: 1px solid #dedede;
+}
+.pricing-table .ptable-description ul li:last-child {
+    border: none;
+}
+.pricing-table .ptable-footer {
+    padding-bottom: 30px;
+}
+.pricing-table .ptable-action a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ff6f61;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: #2a293e;
+}
+.pricing-table .ptable-action a:hover {
+    color: #2a293e;
+    background: #ff6f61;
+}
+.pricing-table .ptable-item.active-item .ptable-action a {
+    color: #2a293e;
+    background: #ff6f61;
+}
+.pricing-table .ptable-item.active-item .ptable-action a:hover {
+    color: #ff6f61;
+    background: #2a293e;
+}
+
+
+.pricing-table .ptable-action button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ff6f61;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: #2a293e;
+}
+.pricing-table .ptable-action button:hover {
+    color: #2a293e;
+    background: #ff6f61;
+}
+.pricing-table .ptable-item.active-item .ptable-action button {
+    color: #2a293e;
+    background: #ff6f61;
+}
+.pricing-table .ptable-item.active-item .ptable-action button:hover {
+    color: #ff6f61;
+    background: #2a293e;
+}
+
+
+/* .withdraw{ */
+    /* backdrop-filter: blur(5px); */
+    /* background-color: rgba(255, 255, 255, 1); */
+    /* opacity: 7 !important; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); */
+  /* } */
+
+  .hero-contents{
+    /* background-color: rgb(255, 255, 255); */
+    box-shadow: 0 2px 15px rgba(255, 74, 23, 0.43);
+  }
+
+
+
+  .hero img.hero-pic {
+    position: relative !important;
+    width: full-width;
+    height: auto;
+    max-height: 100vh;
+    box-shadow: 0 2px 15px rgba(3, 1, 1, 0.52);
+  }
