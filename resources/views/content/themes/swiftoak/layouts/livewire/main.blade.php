@@ -1,3 +1,4 @@
+<!-- main-blade -->
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9"><![endif]-->
 <html lang="en">
