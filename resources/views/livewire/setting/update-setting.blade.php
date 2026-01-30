@@ -1,3 +1,4 @@
+<!-- update-settings -->
 <div>
 	@if ($opened)
 		<form class="row g-3 mt-5" wire:submit.prevent="updateSettingValue">

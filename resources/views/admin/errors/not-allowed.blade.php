@@ -1,3 +1,4 @@
+
 {{-- Extend the Layout --}}
 @extends("$theme_dir.errors.error")
 
