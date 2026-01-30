@@ -1,3 +1,4 @@
+<!-- Success_blade -->
 {{-- Extend the Layout --}}
 @extends("$theme_dir.layouts.$layoutName")
 
