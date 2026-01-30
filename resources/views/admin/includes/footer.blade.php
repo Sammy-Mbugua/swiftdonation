@@ -30,7 +30,6 @@
 		});
 	}
 
-	// Select
 	$(document).ready(function() {
 		$(".select2").select2();
 		$(".select-auto").select2();
